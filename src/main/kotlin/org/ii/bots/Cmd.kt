@@ -7,5 +7,6 @@ annotation class Cmd(
     val args: String,
     val minArgs: Int,
     val permission: String,
-    val aliases: Array<String>
+    val aliases: Array<String>,
+    val help: String
 )

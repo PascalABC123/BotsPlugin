@@ -5,7 +5,7 @@ import org.bukkit.WorldCreator
 import org.bukkit.WorldType
 
 object Utils {
-    fun getVoidWorld(name: String) : World {
+    fun getVoidWorld(name: String): World {
         val wc = WorldCreator(name)
         wc.type(WorldType.FLAT)
         wc.generatorSettings("2;0;1;")
