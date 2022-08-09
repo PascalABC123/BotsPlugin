@@ -1,0 +1,7 @@
+main: org.ii.bots.Main
+name: Bots
+prefix: BOTS
+version: 1.0-SNAPSHOT
+commands:
+  bots:
+    usage: /bots
