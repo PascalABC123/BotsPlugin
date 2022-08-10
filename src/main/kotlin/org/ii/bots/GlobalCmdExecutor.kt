@@ -17,16 +17,9 @@ object GlobalCmdExecutor {
         return true
     }
 
-    @Cmd(
-        "goto",
-        "<Arena id>",
-        1,
-        "bots.arena.select",
-        ["gt", "go", "tp", "arena"],
-        "please type in args in this order: id"
-    )
+    @Cmd("goto", "<Arena id>", 1, "bots.arena.select", ["gt", "tp", "arena"], "please type in args in this order: id")
     fun onGotoCmd(player: Player, args: Array<String>): Boolean {
-        player.teleport(Location(Arenas.getArenaById(args[0].toInt()).world, 0.0, 0.0, 0.0))
+        Arenas.getArenaById(args[0].toInt()).sendPlayers(arrayListOf(player))
         return true
     }
 
@@ -68,7 +61,7 @@ object GlobalCmdExecutor {
         return true
     }
 
-    @Cmd("start", "", 0, "bots.start", ["s"], "")
+    @Cmd("start", "", 0, "bots.start", ["s, go"], "")
     fun onStartCmd(player: Player, args: Array<String>): Boolean {
         return Arenas.sendToAvailableArena(arrayListOf(player))
     }

@@ -10,16 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8521da9a-739f-45b5-9249-60ca81c5737b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/util/Vector3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/bots/BotsListener.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Point3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Ray.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/RayCaster.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Vector3.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/org/ii/bots/raycasting/RayCasterTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/Cmd.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/Cmd.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/GlobalCmdExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/GlobalCmdExecutor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/arena/Arena.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/arena/Arena.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/arena/Arenas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/arena/Arenas.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/arena/Map.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/arena/Map.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/pvp/PvpListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/pvp/DamageMonitor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/util/Vector3.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +33,9 @@
       <list>
         <option value="Kotlin Annotation" />
         <option value="Class" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -54,18 +57,65 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/server1.8/plugins",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.language.Kotlin"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="org.ii.bots" />
       <recent name="org.ii.bots.arena" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.ii.bots.raycasting" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.RayCasterTest">
+    <configuration name="RayCasterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consoleApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ii.bots.raycasting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ii.bots.raycasting" />
+      <option name="MAIN_CLASS_NAME" value="org.ii.bots.raycasting.RayCasterTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RayCasterTest.getIntersection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="consoleApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ii.bots.raycasting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ii.bots.raycasting" />
+      <option name="MAIN_CLASS_NAME" value="org.ii.bots.raycasting.RayCasterTest" />
+      <option name="METHOD_NAME" value="getIntersection" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RayCasterTest" />
+        <item itemvalue="JUnit.RayCasterTest.getIntersection" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -77,6 +127,7 @@
       <updated>1660033059303</updated>
       <workItem from="1660033064654" duration="23815000" />
       <workItem from="1660066800429" duration="12451000" />
+      <workItem from="1660120702407" duration="22725000" />
     </task>
     <servers />
   </component>
