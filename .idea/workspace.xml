@@ -10,18 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8521da9a-739f-45b5-9249-60ca81c5737b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/bots/BotsListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Point3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Ray.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/RayCaster.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Vector3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/org/ii/bots/raycasting/RayCasterTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/pvp/Hit.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/GlobalCmdExecutor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/GlobalCmdExecutor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/pvp/PvpListener.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/pvp/DamageMonitor.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/util/Vector3.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/pvp/DamageMonitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/pvp/DamageMonitor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Point3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Point3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Ray.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Ray.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/RayCaster.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/RayCaster.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Vector3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/ii/bots/raycasting/Vector3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/org/ii/bots/raycasting/RayCasterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/org/ii/bots/raycasting/RayCasterTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +31,10 @@
       <list>
         <option value="Kotlin Annotation" />
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
@@ -59,7 +58,7 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/server1.8/plugins",
+    "last_opened_file_path": "C:/Users/User/Downloads/mcp918/src/minecraft",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -127,7 +126,8 @@
       <updated>1660033059303</updated>
       <workItem from="1660033064654" duration="23815000" />
       <workItem from="1660066800429" duration="12451000" />
-      <workItem from="1660120702407" duration="22725000" />
+      <workItem from="1660120702407" duration="30285000" />
+      <workItem from="1660210852213" duration="19621000" />
     </task>
     <servers />
   </component>

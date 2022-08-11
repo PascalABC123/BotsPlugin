@@ -1,9 +1,13 @@
 package org.ii.bots
 
-import org.bukkit.Location
+import org.bukkit.Bukkit
 import org.bukkit.Material
+import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer
 import org.bukkit.entity.Player
 import org.ii.bots.arena.Arenas
+import org.ii.bots.raycasting.Point3
+import org.ii.bots.raycasting.Ray
+import org.ii.bots.raycasting.RayCaster
 import java.nio.file.Path
 import kotlin.io.path.appendText
 import kotlin.io.path.createFile
@@ -64,5 +68,13 @@ object GlobalCmdExecutor {
     @Cmd("start", "", 0, "bots.start", ["s, go"], "")
     fun onStartCmd(player: Player, args: Array<String>): Boolean {
         return Arenas.sendToAvailableArena(arrayListOf(player))
+    }
+
+    @Cmd("test", "", 0, "bots.test", [], "")
+    fun onTestCmd(player: Player, args: Array<String>): Boolean {
+        val origin = Point3(player.eyeLocation.x, player.eyeLocation.y, player.eyeLocation.z)
+        val direction = RayCaster.getVector3(player.eyeLocation.yaw, player.eyeLocation.pitch)
+        player.sendMessage(RayCaster.getRayDistance(Ray(direction, origin), (Bukkit.getPlayer(args[0]) as CraftPlayer).handle.boundingBox).toString())
+        return true
     }
 }

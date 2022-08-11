@@ -32,7 +32,8 @@ class Main : JavaPlugin(), CommandExecutor, Listener {
     override fun onEnable() {
         dataFolder.mkdirs()
 
-        Bukkit.getPluginManager().registerEvent(EntityDamageByEntityEvent::class.java, this, EventPriority.MONITOR, DamageMonitor, this)
+        Bukkit.getPluginManager()
+            .registerEvent(EntityDamageByEntityEvent::class.java, this, EventPriority.MONITOR, DamageMonitor, this)
         Bukkit.getPluginManager().registerEvents(BotsListener, this)
 
         Arenas.refreshArenas()
@@ -72,6 +73,7 @@ class Main : JavaPlugin(), CommandExecutor, Listener {
                 sender?.sendMessage(f.getAnnotation(Cmd::class.java).help)
             }
         } catch (e: Exception) {
+            e.printStackTrace()
             sender?.sendMessage(f.getAnnotation(Cmd::class.java).help)
         }
         return true
